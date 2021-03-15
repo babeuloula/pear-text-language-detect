@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+    php:
+        build:
+            context: .
+            dockerfile: ./php/Dockerfile
+            args:
+                UID: "${DOCKER_UID}"
+        env_file:
+            - .env
+        volumes:
+            - ./php/config/memory_limit.ini:/usr/local/etc/php/conf.d/memory_limit.ini:ro
+            - ..:/var/www/html
+        restart: "no"
+

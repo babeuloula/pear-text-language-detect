@@ -1,0 +1,15 @@
+{
+    "name": "babeuloula/pear-text-language-detect",
+    "description": "It's just a POC of the lib Text_LanguageDetect.",
+    "type": "project",
+    "require": {
+        "php": "^7.4",
+        "pear/text_languagedetect": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "BaBeuloula",
+            "email": "info@babeuloula.fr"
+        }
+    ]
+}
